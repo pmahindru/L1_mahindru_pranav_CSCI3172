@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- give some title and the link to connect with css and script  -->
         <title> Portfolio </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
+
     <body>
-        hey need to change
+        <!-- header and navigation -->
+        <div class="background">
+            <header class="header">
+                <nav class="navigation-bar">
+                    <a id="name" href="#"> Pranav Mahindru </a>
+    
+                    <ul>
+                        <li> <a href="#">HOME</a> </li>
+                        <li> <a href="#">EDUCATION</a> </li>
+                        <li> <a href="#">EXPERIENCES</a> </li>
+                        <li> <a href="#">CONTACT</a> </li>
+                    </ul>
+                </nav>
+                
+                <div id="textonimage" data-aos-duration="1300" data-aos="zoom-out">
+                    <h1> Hello, My name is Pranav Mahindru  </h1>
+                    <br>
+                    <p id="textaboutme">
+                        Studying Bachelor's of Computer Science at Dalhousie University with interests <br> in the field of Software developer and Full Stack Developer and Mathematics.
+                    </p>
+                </div>
+            </header>
+        </div>
+
+        <!-- main content of the page -->
+        <main>
+        
+    
+        </main>
+
+        <!-- this is footer and links to social media  -->
+        <!--  -->
+        <footer>
+            <div class="text_copyright">
+                Copyright &#169; Pranav Mahindru 2022
+            </div>
+
+            <div class="social_media">
+                <a href="https://www.facebook.com/pranav.mahindru/" class="fa facebook"> Facebook</a>
+                <a href="https://www.instagram.com/pranavmahindru16/" class="fa instagram">Instagram</a>
+                <a href="https://www.linkedin.com/in/pmahindru/" class="fa linkedln">LinkedIn</a>
+                <a href="https://github.com/pmahindru" class="fa github">Git-hub</a>
+                <a href="https://web.cs.dal.ca/~mahindru" class="fa oldsite">Old website</a>
+            </div>
+        </footer>
+
+        <!-- this is top button -->
+        <button onclick="topbutton()" id="backToTop" data-aos-duration="1300" data-aos="slide-left">
+            <span class="top_text_style toparrow">
+                ^ <br>Top
+            </span>
+        </button>
+
+        <!-- this is javascript -->
+        <script src="script.js"></script>
+
+        <!-- external file used and also cite in the readme fle -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script> AOS.init(); </script>
     </body>
+
 </html>
+         

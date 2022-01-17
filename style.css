@@ -1,3 +1,170 @@
+/* 
+this is for the page with the box sizing
+background color 
+No margin and padding and also add font to look more good for the single page website
+*/
+*{
+    scroll-behavior: smooth;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body{
-    background-color: aqua;
+    background-color: rgb(2, 37, 58);
+    color: white;
+}
+
+main{
+    margin: 0%;
+    padding: 20px 12px 0px;
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+li{
+    background: none; 
+    color: white;
+}
+
+ul{
+    background: none; 
+    color: white;
+}
+
+#textaboutme{
+    font-size: 24px;
+    background-color: rgba(1, 0, 0, 0.2);
+}
+
+/* 
+this css is for the header and the navigation bar 
+*/
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('image/ai.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.navigation-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-top: 0px;
+    
+}
+
+.navigation-bar #name{
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.navigation-bar ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: right;
+    justify-content: right;
+    list-style: none;
+}
+
+.navigation-bar ul li a{
+    padding: 22px;
+    color: white;
+    text-decoration: none;
+} 
+
+.navigation-bar ul li a:hover{
+    background: rgba(141, 177, 255, 0.3);
+}
+
+#textonimage{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* footer style */
+footer{
+    padding: 20px 42px 40px 12px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.fa{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid black;
+}
+
+.fa:hover{
+    opacity: 0.8;
+}
+
+.facebook{
+    background-color: #3B5998;
+}
+.instagram{
+    background-color: #cf3530d2;
+}
+.linkedln{
+    background-color: #107bf5d2;
+}
+.github{
+    background-color: #000000d2;
+}
+.oldsite{
+    background-color: #19191ad2;
+}
+
+
+/* top button */
+#backToTop{
+    position: fixed;
+    bottom: 23px;
+    right: 25px;
+    display: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 800;
+}
+
+.toparrow{
+    font-size: 18px;
+    background: none;
+}
+
+.top_text_style{
+    background: linear-gradient(to left, rgb(233, 214, 41), rgb(255, 136, 0), rgb(255, 51, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+/* media query */
+/* mobile */
+@media (max-width: 480px){
+}
+
+/* tablet */
+@media (min-width:481) and (max-width: 870px){
 }
