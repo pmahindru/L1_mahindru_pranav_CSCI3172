@@ -17,3 +17,13 @@ function topbutton(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// dropdown for the navigation bar
+function opendropdown() {
+    if(document.getElementById("show").style.display === "block"){
+        document.getElementById("show").style.display = "none";
+    }
+    else{
+        document.getElementById("show").style.display = "block";
+    }
+}

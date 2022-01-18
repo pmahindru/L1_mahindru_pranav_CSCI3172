@@ -6,37 +6,228 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- external style for animation on scroll (AOS) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="homepage">
         <!-- header and navigation -->
         <div class="background">
-            <header class="header">
-                <nav class="navigation-bar">
-                    <a id="name" href="#"> Pranav Mahindru </a>
-    
-                    <ul>
-                        <li> <a href="#">HOME</a> </li>
-                        <li> <a href="#">EDUCATION</a> </li>
-                        <li> <a href="#">EXPERIENCES</a> </li>
-                        <li> <a href="#">CONTACT</a> </li>
-                    </ul>
-                </nav>
-                
+            <nav class="navigation-bar">
+                <a id="name" href="#homepage"> Pranav Mahindru </a>
+
+                <div class="hovedropdown">
+                    <button onclick="opendropdown()" class="dropdownbutton"> MENU </button>
+                    <div id="show">
+                        <ul>
+                            <li> <a href="#homepage">HOME</a> </li>
+                            <li> <a href="#edu_exp">EDUCATION & EXPERIENCES</a> </li>
+                            <li> <a href="#skills">SKILLS</a></li>
+                            <li> <a href="#project">PROJECTS</a></li>
+                            <li> <a href="#contact">CONTACT</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header>        
                 <div id="textonimage" data-aos-duration="1300" data-aos="zoom-out">
                     <h1> Hello, My name is Pranav Mahindru  </h1>
                     <br>
                     <p id="textaboutme">
                         Studying Bachelor's of Computer Science at Dalhousie University with interests <br> in the field of Software developer and Full Stack Developer and Mathematics.
                     </p>
-                </div>
+                </div>    
             </header>
+            
+            <a href="#edu_exp" aria-label="scroll down"> 
+                <div class="scroll_down"> <span class="down_arrow"></span></div>
+            </a>
         </div>
-
+        
         <!-- main content of the page -->
         <main>
-        
+            <section class="standardpagestyle" id="edu_exp">
+                <div class="standardheading">
+                    
+                    <h2> Experiences</h2>
+                    <br>
+                    <div class="alltext">
+                        <h3> Software Developer </h3>
+                        <h5> Ocean Frontier Institute - Halifax, NS </h5>
+                        <p>
+                            -> Developed and tested a web application to display sensor tracking data in a user-friendly framework at Ocean Frontier Institute 
+                            <br>
+                            -> Analyzed and fixed multiple bugs in the TypeScript code before the estimated deadline resulting in smooth transition from the Vue JS to Svelte.
+                            <br>
+                            -> Met all the deadlines and attended all meeting showcasing my progress timely to the data stand up team and my manager.
+                        </p>
+                        <br>
+                        <h3> Teaching Assistant  </h3>
+                        <h5> Dalhousie University - Halifax, NS </h5>
+                        <p>
+                            -> Mentored students along with classroom support and guidance.
+                            <br>
+                            -> Worked closely with the lead teacher to identify issues of students and critically develop solutions.
+                            <br>
+                            -> Maintain a supportive safe and clean classroom environment.
+                        </p>
+                        <br>
+                        <h3> Note Taker  </h3>
+                        <h5> Dalhousie University - Halifax, NS </h5>
+                        <p>
+                            -> Ensured notes are clear and comprehensive taken with fast and accurate typing 
+                            <br>
+                            -> Provided the notes within 48 hours of the lecture organized in the agreed format, hence, meeting deadlines with accuracy.
+                            <br>
+                            -> Maintain a supportive safe and clean classroom environment.
+                        </p>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <h2> Education </h2>
+                    <br>
+                    <div class="alltext">
+                        <h3> Dalhousie University - Halifax, NS </h3>
+                        <h5> Computer Science  </h5>
+                        <p>
+                            -> Science with interest of Artificial Intelligence, Big Data and Full Stack Developer
+                            <br>
+                            -> Course Representative for the Introduction to Computer Science (September 2019 - December 2019 )
+                            <br>
+                            -> Met all the deadlines and attended all meeting showcasing my progress timely to the data stand up team and my manager.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="standardpagestyle" id="skills">
+                <div class="standardheading">
+                    <h2> Skills </h2>  
+                    <div class="alltext">
+                        <br>
+                        <br>
+                            Development: &nbsp; JAVA, SVELTE, Full Stack Developer, VUE, SQL, PYTHON
+                        <br>
+                        <br>
+                            Operating System: ANDROID, MICROSOFT WINDOW, MAC & IOS
+                        <br>
+                        <br>
+                            Software: SUBLIME TEXT, TERMINAL, INTELLIJ, MYSQL, PYCHARM
+                    </div>    
+                </div>
+            </section>
+
+            <br>
+
+            <section class="standardpagestyle" id="project">
+                <div class="standardheading">
+                    <h2>Projects</h2>
+                    <br>
+                    <div class="alltext">
+                        <h3> NASA Space App - SCRATCH </h3>
+                        <h5> Dalhousie University - Halifax, NS  </h5>
+                        <p>
+                            Developed an adventure game using Scratch language that utilizes NASA's Earth Data to spread environment awareness.
+                            Received a Global Nomination from NASA Space App.
+                            <br>
+                            <a href="https://2019.spaceappschallenge.org/challenges/living-our-world/1up-nasa-earth/teams/safe-space-1/project">
+                                &#128279; Space App Challenge
+                            </a>
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="alltext">
+                        <h3> Quick Cash - JAVA </h3>
+                        <h5> Dalhousie University - Halifax, NS  </h5>
+                        <p>
+                            -> Developed an app in Android Studio using Java
+                            <br>
+                            -> A hiring portal for the employer with the added payroll feature through the app itself. Employee can apply jobs in any location and get notification of the new jobs based on the search.
+                            <br>
+                            <a href="https://github.com/pmahindru/new-project">
+                                &#128279; Quick Cash
+                            </a>
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="alltext">
+                        <h3> Test2Track - HTML / CSS / PYTHON </h3>
+                        <h5> Dalhousie University - Halifax, NS  </h5>
+                        <p>
+                            -> Developed an app in Android Studio using Java
+                            <br>
+                            -> Developed A mobile App software and revised screening processes to increase the accuracy and speed with which early testing can occur during COVID-19
+                            <br>
+                            -> Tested and analyzed a true example using the interface created using HTML and PYTHON
+                            <br>
+                            <a href="https://pranav16.pythonanywhere.com/">
+                                &#128279; Test2Track
+                            </a>
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="alltext">
+                        <h3> Game Development - C# / UNITY </h3>
+                        <h5> Dalhousie University - Halifax, NS  </h5>
+                        <p>
+                            -> Created 2-D Game Elements to develop an Android Game
+                            <br>
+                            <a href="https://play.google.com/store/apps/details?id=io.brickbreaker.brickbreaker">
+                                &#128279; Brick Breaker
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="standardpagestyle" id="contact">
+                <div class="standardheading">
+                    <h2> Contacts </h2>
+                    <div>
+                        Emails: &nbsp;  
+                        <a href="mailto:pranav.mahhindru@dal.ca">
+                            pranav.mahindru@dal.ca 
+                        </a>
+                        ||
+                        <a href="mailto:pranavmahhindru16@gmail.com">
+                            pranavmahindru16@gmail.com
+                        </a>
+                        <br>
+                        Phone: <a href="tel:+19022939827">+1902-293-9827</a>
+                        <br>
+                        <br>
+                        <p id="textforcontact">.......or use the following form </p>
+                    </div>
+
+                    <br>
+                    <form class="form"> 
+                        <label for="First Name"> First Name: </label>
+                        <input type="text" name="First_Name" placeholder="First Name" required>
+                        <label for="Last Name"> Last Name: </label>
+                        <input type="text" name="Last_Name" placeholder="Last Name" required>
+                        <label for="Email"> Email: </label>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <label for="Phone number"> Phone Number: </label>
+                        <input type="number" name="phone_number" placeholder="Phone Number" required>
+                        <label for="message"> Message: </label>
+                        <textarea name="message" id="message" placeholder="Messages"> </textarea>
+                        <button>Submit</button>
+                    </form>
+                    
+                </div>
+            </section>
     
+
         </main>
 
         <!-- this is footer and links to social media  -->
@@ -45,22 +236,23 @@
             <div class="text_copyright">
                 Copyright &#169; Pranav Mahindru 2022
             </div>
-
+            <br>
             <div class="social_media">
                 <a href="https://www.facebook.com/pranav.mahindru/" class="fa facebook"> Facebook</a>
                 <a href="https://www.instagram.com/pranavmahindru16/" class="fa instagram">Instagram</a>
                 <a href="https://www.linkedin.com/in/pmahindru/" class="fa linkedln">LinkedIn</a>
                 <a href="https://github.com/pmahindru" class="fa github">Git-hub</a>
-                <a href="https://web.cs.dal.ca/~mahindru" class="fa oldsite">Old website</a>
+                <a href="https://web.cs.dal.ca/~mahindru" class="fa oldsite">Old Site</a>
             </div>
         </footer>
 
         <!-- this is top button -->
-        <button onclick="topbutton()" id="backToTop" data-aos-duration="1300" data-aos="slide-left">
-            <span class="top_text_style toparrow">
-                ^ <br>Top
-            </span>
-        </button>
+        <div id="backToTop" data-aos-duration="1300" data-aos="slide-left">
+            <button onclick="topbutton()" class="top_text_arrow_style">
+                ^<br>Top
+            </button>
+        </div>
+        
 
         <!-- this is javascript -->
         <script src="script.js"></script>
