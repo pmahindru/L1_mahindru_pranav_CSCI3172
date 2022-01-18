@@ -406,9 +406,9 @@ there is nothing copy paste i just learn from the website w3school for the grid 
 
 *Repeat as needed*
 
-### File Name HTML FILE (content and the link)
+### File Name HTML FILE (content and the link) and JAVACRIPT FILE (top button function)
 
-*Lines Content in the HTML
+*Lines Content in the HTML and in javascrip i took code (1-19).
 
 Article title: Pranav Mahindru
 URL: https://web.cs.dal.ca/~mahindru/
@@ -419,6 +419,29 @@ Date accessed: January 17, 2022 and January 18, 2022
 Copy and paste your code on lines mentioned 
 
 i just content from my own website which made in back 2019 and also i took &#128279; from my own website which is link. i also refrer to my resume for the content
+
+
+// top button script
+var top_button = document.getElementById("backToTop");
+window.onscroll = function(){
+    scrollfunction();
+};
+
+function scrollfunction(){
+    if(document.documentElement.scrollTop > 85 || document.body.scrollTop > 85){
+        top_button.style.display = "block";
+        
+    }
+    else{
+        top_button.style.display = "none";
+    }
+}
+function topbutton(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+in Javascript i  took this code from my website, function for the top button
 
 ```
 
@@ -431,10 +454,31 @@ Copy and paste the snippet of code you are referencing
 
 &#128279; this is taken for the link, there is code is take from the website it is only about the content
 
+for javascript file
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 ```
 
-- <!---How---> i didnt take any code from my website it is only for the content 
-- <!---Why---> no code used only content
-- <!---How---> most of the content are same and i keep it more simple to understand the user easily.
+- <!---How---> i didnt take any code from my website it is only for the content and in Javascript i  took this code from my website, function for the top button
+- <!---Why---> no code used only content, in Javascript i  took this code from my website, function for the top button
+- <!---How---> most of the content are same and i keep it more simple to understand the user easily, in Javascript i  took this code from my website, function for the top button
 
 *Repeat as needed*
