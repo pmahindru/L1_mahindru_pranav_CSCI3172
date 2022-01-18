@@ -1,7 +1,7 @@
 /* 
 this is for the page with the box sizing
 background color 
-No margin and padding and also add font to look more good for the single page website
+No margin and padding and also add standard font to look more good for the single page website
 */
 *{
     scroll-behavior: smooth;
@@ -44,11 +44,24 @@ ul{
 this css is for the header and the navigation bar 
 */
 .background{
+    /* 
+    image is taken from the given link which is accessed on January 16, 2022
+
+    Article title: Want to use AI and machine learning? You need the right infrastructure
+    URL: https://www.networkworld.com/article/3329861/want-to-use-ai-and-machine-learning-you-need-the-right-infrastructure.html
+    Website title: Network World
+    Date accessed: January 17, 2022
+    Date published: December 21, 2018
+
+    URL: https://www.google.com/search?q=ai%2Bpicture&sxsrf=AOaemvLpESPZspiXwdRaQvUrP_V7y3zs9Q%3A1642487458575&tbm=isch&source=iu&ictx=1&vet=1&fir=lWgiYrhNCHMGNM%252CHJcKMLk7JiCIvM%252C_%253B_X3jAT5Dl9C27M%252CTTxDCXT9yP6zNM%252C_%253BWisEJTAPoBXPFM%252CTTxDCXT9yP6zNM%252C_%253BYRsHxswelXA-sM%252CHJcKMLk7JiCIvM%252C_%253BNl9_Haf9plVJ6M%252CUKmUOVQVoyYyoM%252C_%253B3rv5LXhSckwsiM%252CTTxDCXT9yP6zNM%252C_%253BTlPiFvjzpmDz1M%252CeZRcg5x2i1gzOM%252C_%253B-5Zq-N8-2IGX0M%252CHJcKMLk7JiCIvM%252C_%253Bg6lggia-TjmKrM%252CBCOVp4MlJAQ3pM%252C_%253BWbcWq_l0lpoh8M%252CTTxDCXT9yP6zNM%252C_%253BwPaAjmMWrn2MEM%252CHJcKMLk7JiCIvM%252C_%253BuvWb3BSiKuseYM%252Cyvpd56DLAeU3MM%252C_&usg=AI4_-kSKd9KwyEZU9JeRVCoDwW2FrluzCg&sa=X&ved=2ahUKEwiHnJDM1rr1AhVhsDEKHZLID5QQ9QF6BAgaEAE#imgrc=vkClVIvMyiNb-M
+    Website title: Google Search
+    Date accessed: January 17, 2022
+
+    */
+
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('image/ai.jpeg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+    /* vh --> viewport height */
     height: 100vh;
 }
 
@@ -93,17 +106,15 @@ this css is for the header and the navigation bar
 }
 
 #textonimage{
-    display: block;
     text-align: center;
     color: white;
     font-weight: 900;
     font-size: 20px;
     top: 30%;
-    left: 0px;
-    right: 0px;
-    max-width: 1000px;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
     position: absolute;
-    margin: auto;
 }
 
 /* scroll down to education and experience */
@@ -185,7 +196,6 @@ this css is for the header and the navigation bar
     padding: 4rem 0;
     height: auto;
     width: auto;
-    /* overflow: hidden; */
 }
 .standardheading{
     font-size: 150%;
@@ -205,10 +215,20 @@ this css is for the header and the navigation bar
 
 /* contact form */
 #contact{
+    /* 
+    image is taken from the given link which is accessed on January 18, 2022
+    Article title: Download Stage podium with blue spotlight lighting effect for free
+    URL: https://www.vecteezy.com/vector-art/2849004-stage-podium-with-blue-spotlight-lighting-effect
+    Website title: Vecteezy
+    Date accessed: January 17, 2022
+    Date published: June 29, 2021
+
+    URL: https://www.google.com/search?q=dark%2Bblue%2Band%2Bblack%2Blight%2Bview&tbm=isch&ved=2ahUKEwjxl7jh5br1AhXqQUIHHetZB5sQ2-cCegQIABAA&oq=dark%2Bblue%2Band%2Bblack%2Blight%2Bview&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoGCAAQCBAeOgUIABCABDoICAAQgAQQsQM6CwgAEIAEELEDEIMBOggIABCxAxCDAToECAAQQzoHCAAQsQMQQ1CMD1iQT2D7T2gCcAB4AIABf4gB-heSAQQyNC45mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=iW7mYbGvMOqDieoP67Od2Ak&bih=788&biw=1436#imgrc=5-0vqeBKuYKQjM&imgdii=jGZXltiQMhkweM
+    Website title: Google Search
+    Date accessed: January 17, 2022
+    */
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('image/contactimg.jpeg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     height: 100vh;
     overflow: hidden;
 }
@@ -225,6 +245,7 @@ this css is for the header and the navigation bar
     padding: 15px;
     padding: 0% 0% 70% 0%;
     grid-gap: 3px;
+    margin-right: 20px;
 }
 label,button,input{
     padding: 15px;
